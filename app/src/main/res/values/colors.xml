@@ -12,5 +12,6 @@
     <!-- 黑色 -->
     <color name="text_color_title">#1f1f1f</color>
     <color name="yellow_6">#ffd966</color>
+    <color name="yellow_5">#FFA500</color>
     <color name="blue_9">#c9daf8</color>
 </resources>

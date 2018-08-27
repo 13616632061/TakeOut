@@ -10,6 +10,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -24,6 +25,7 @@ import com.example.administrator.takeout.ui.fragment.ShopEvaluationFragment;
 import com.example.administrator.takeout.ui.fragment.ShopGoodsInfoFragment;
 import com.example.administrator.takeout.ui.fragment.ShopInfoFragment;
 import com.example.administrator.takeout.ui.widght.CircleImageView;
+import com.example.administrator.takeout.util.ScreenUtil;
 import com.nshmura.recyclertablayout.RecyclerTabLayout;
 import com.squareup.picasso.Picasso;
 
@@ -33,7 +35,7 @@ import java.util.List;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-public class ShopDeatailActivity extends BaseActivity implements Toolbar.OnMenuItemClickListener, ViewPager.OnPageChangeListener{
+public class ShopDeatailActivity extends BaseActivity implements Toolbar.OnMenuItemClickListener, ViewPager.OnPageChangeListener, View.OnClickListener {
 
 
     @InjectView(R.id.iv_search)
@@ -60,6 +62,8 @@ public class ShopDeatailActivity extends BaseActivity implements Toolbar.OnMenuI
     AppBarLayout appBar;
     @InjectView(R.id.viewpager)
     ViewPager viewpager;
+    @InjectView(R.id.tv_title)
+    TextView tvTitle;
     private String logo;
     private String name;
     private int toolBarPositionY;
@@ -68,6 +72,10 @@ public class ShopDeatailActivity extends BaseActivity implements Toolbar.OnMenuI
     private String[] str_title = new String[]{
             "点菜", "评价", "商家"
     };
+
+
+    private float mSelfHeight = 0;  //用以判断是否得到正确的宽高值
+    private float mTitleScale;      //标题缩放值
 
     @Override
     protected int getContentId() {
@@ -90,10 +98,25 @@ public class ShopDeatailActivity extends BaseActivity implements Toolbar.OnMenuI
         if (!TextUtils.isEmpty(name)) {
             tvShopName.setText(name);
             Picasso.with(this).load(logo).into(ivLogo);
+            tvTitle.setText(name);
         }
         setSupportActionBar(toolbar);
         toolbar.setOnMenuItemClickListener(this);
+        toolbar.setNavigationIcon(R.drawable.icon_back);
+        toolbar.setNavigationOnClickListener(this);
 
+
+        appBar.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
+            @Override
+            public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
+                if (verticalOffset >-90) {
+                    tvTitle.setVisibility(View.GONE);
+                }else {
+                    tvTitle.setVisibility(View.VISIBLE);
+                    tvTitle.setText(name);
+                }
+            }
+        });
         initFragment();
 
     }
@@ -148,6 +171,16 @@ public class ShopDeatailActivity extends BaseActivity implements Toolbar.OnMenuI
     @Override
     public void onPageScrollStateChanged(int i) {
 
+    }
+
+    /**
+     * 返回按钮
+     *
+     * @param v
+     */
+    @Override
+    public void onClick(View v) {
+        finish();
     }
 
     public class FragmentAdapter extends FragmentPagerAdapter {

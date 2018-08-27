@@ -12,9 +12,8 @@ import android.view.ViewGroup;
 import com.example.administrator.takeout.R;
 import com.example.administrator.takeout.base.BaseFragment;
 import com.example.administrator.takeout.bean.GoodsInfoBean;
-import com.example.administrator.takeout.bean.IndexAllTypeBean;
+import com.example.administrator.takeout.ui.adapter.GoodsInfoAdapter;
 import com.example.administrator.takeout.ui.adapter.GoodsTypeAdapter;
-import com.example.administrator.takeout.ui.adapter.IndexTypeAdapter;
 import com.example.administrator.takeout.util.JsonUtil;
 import com.google.gson.Gson;
 
@@ -31,10 +30,15 @@ import butterknife.InjectView;
 public class ShopGoodsInfoFragment extends BaseFragment {
     @InjectView(R.id.list)
     RecyclerView list;
+    @InjectView(R.id.list_goods)
+    RecyclerView listGoods;
 
     private Context context;
-    private List<GoodsInfoBean.GoodsInfoListBean> typeDatas=new ArrayList<>();
+    private List<GoodsInfoBean.GoodsInfoListBean> typeDatas = new ArrayList<>();
     private GoodsTypeAdapter goodsTypeAdapter;
+    private List<GoodsInfoBean.GoodsInfoListBean.TypeGoodsListBean> goodsDatas = new ArrayList<>();
+    private GoodsInfoAdapter goodsInfoAdapter;
+
     @Override
     protected int getContentId() {
         return R.layout.shop_goodinfo_fragment;
@@ -43,9 +47,10 @@ public class ShopGoodsInfoFragment extends BaseFragment {
     @Override
     protected void init() {
         super.init();
-        context=getActivity();
+        context = getActivity();
         initTypeData();
     }
+
 
     /**
      * 分类
@@ -57,13 +62,23 @@ public class ShopGoodsInfoFragment extends BaseFragment {
         GoodsInfoBean bean = new Gson().fromJson(json, GoodsInfoBean.class);
         if (bean != null) {
             typeDatas.clear();
+            goodsDatas.clear();
             for (GoodsInfoBean.GoodsInfoListBean bean1 : bean.getGoodsInfoList()) {
                 typeDatas.add(bean1);
+                for (GoodsInfoBean.GoodsInfoListBean.TypeGoodsListBean bean2 : bean1.getTypeGoodsList()) {
+                    goodsDatas.add(bean2);
+                }
             }
+
         }
-        Log.i("typeDatas",typeDatas.size()+"");
-        goodsTypeAdapter=new GoodsTypeAdapter(R.layout.item_goods_type,typeDatas);
+        Log.i("typeDatas", typeDatas.size() + "");
+        goodsTypeAdapter = new GoodsTypeAdapter(R.layout.item_goods_type, typeDatas);
         list.setAdapter(goodsTypeAdapter);
         list.setLayoutManager(new LinearLayoutManager(context));
+
+        goodsInfoAdapter = new GoodsInfoAdapter(context, R.layout.item_goods_info_layout, goodsDatas);
+        listGoods.setAdapter(goodsInfoAdapter);
+        listGoods.setLayoutManager(new LinearLayoutManager(context));
     }
+
 }
