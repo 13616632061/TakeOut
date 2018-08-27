@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="?attr/actionBarSize">
+    <item
+        android:id="@+id/iv_search"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:icon="@drawable/search3x"
+        android:title="search" />
+    <item
+        android:id="@+id/iv_collect"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:title="collection" />
+    <item
+        android:id="@+id/iv_spell"
+        android:layout_marginLeft="15dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:title="spell" />
+    <item
+        android:id="@+id/iv_more"
+        android:layout_marginLeft="15dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:title="more" />
+</menu>

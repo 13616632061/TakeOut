@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggray"
+    tools:context=".ui.activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="45dp">
+        <include layout="@layout/base_line_layout"></include>
+        <RadioGroup
+            android:id="@+id/tabs_rg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/tab_index"
+                android:text="首页"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/tab_recommend"
+                android:text="闪购"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/tab_order"
+                android:text="订单"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/tab_my"
+                android:text="我的"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</RelativeLayout>

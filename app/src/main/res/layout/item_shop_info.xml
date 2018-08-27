@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="95dp"
+            android:layout_height="95dp" />
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_logo"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:textColor="@color/text_color_title"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="星巴克"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+          <RelativeLayout
+              android:layout_marginTop="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/rating_bar"
+                android:layout_centerVertical="true"
+                style="@style/Widget.MaterialRatingBar.RatingBar.Small"
+                android:progressDrawable="@drawable/circle_rating_bar_full"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp" />
+              <TextView
+                  android:id="@+id/tv_code"
+                  android:textSize="12sp"
+                  android:textColor="@color/text_color_title"
+                  android:layout_marginLeft="@dimen/dp_4"
+                  android:layout_centerVertical="true"
+                  android:layout_toRightOf="@+id/rating_bar"
+                  android:text="4.6"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <TextView
+                  android:id="@+id/tv_sale_nums"
+                  android:textSize="12sp"
+                  android:textColor="@color/text_color_title"
+                  android:layout_marginLeft="10dp"
+                  android:layout_centerVertical="true"
+                  android:layout_toRightOf="@+id/tv_code"
+                  android:text="月售816"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <TextView
+                  android:id="@+id/tv_send_time"
+                  android:textSize="12sp"
+                  android:textColor="@color/text_color_title"
+                  android:layout_centerVertical="true"
+                  android:layout_alignParentRight="true"
+                  android:text="40分钟|325m"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+          </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_send_fee"
+                android:layout_marginTop="5dp"
+                android:text="起送￥20"
+                android:textSize="12sp"
+                android:textColor="@color/text_color_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_shop_type"
+                android:layout_marginTop="5dp"
+                android:text="中式简餐"
+                android:textSize="12sp"
+                android:textColor="@color/text_color_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.example.administrator.takeout.ui.widght.WarpLinearLayout
+                android:id="@+id/warpLinear_layout"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></com.example.administrator.takeout.ui.widght.WarpLinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

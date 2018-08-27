@@ -1,0 +1,200 @@
+{
+  "goodsInfoList": [
+    {
+      "typeId": "0",
+      "typeName": "热销",
+      "typeGoodsList": [
+        {
+          "goodsId":"001",
+          "goodsName": "什锦坛子菜肉末饭+雪梨炖银耳+蒸蛋",
+          "goodsPicture":"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3747848266,2546375444&fm=15&gp=0.jpg",
+          "monthSaleNums":684,
+          "praiseNums":17,
+          "nomalPrice":45.00,
+          "discountPrice":21.90,
+          "disconut":4.87
+        },
+        {
+          "goodsId":"002",
+          "goodsName": "香滑蒸蛋",
+          "goodsPicture":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1018270315,1129975442&fm=26&gp=0.jpg",
+          "monthSaleNums":477,
+          "praiseNums":9,
+          "nomalPrice":10.00,
+          "discountPrice":5.00,
+          "disconut":5.0
+        },
+        {
+          "goodsId":"003",
+          "goodsName": "黄豆海带龙骨原蛊蒸汤",
+          "goodsPicture":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1080307228,3433183671&fm=26&gp=0.jpg",
+          "monthSaleNums":412,
+          "praiseNums":5,
+          "nomalPrice":7.00,
+          "discountPrice":15.00,
+          "disconut":4.67
+        },
+        {
+          "goodsId":"004",
+          "goodsName": "农家小炒肉饭",
+          "goodsPicture":"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1873953888,3780136948&fm=26&gp=0.jpg",
+          "monthSaleNums":374,
+          "praiseNums":3,
+          "nomalPrice":25.00,
+          "discountPrice":17.00,
+          "disconut":6.8
+        },
+        {
+          "goodsId":"005",
+          "goodsName": "土豆丝牛肉饭",
+          "goodsPicture":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2093421300,2520548149&fm=26&gp=0.jpg",
+          "monthSaleNums":339,
+          "praiseNums":2,
+          "nomalPrice":28.90,
+          "discountPrice":19.00,
+          "disconut":6.57
+        }
+      ]
+    },
+    {
+      "typeId": "1",
+      "typeName": "折扣",
+      "typeGoodsList": [
+        {
+          "goodsId":"101",
+          "goodsName": "咸蛋黄茄子豆角饭",
+          "goodsPicture":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2907512213,4216822218&fm=26&gp=0.jpg",
+          "monthSaleNums":96,
+          "praiseNums":0,
+          "nomalPrice":25.00,
+          "discountPrice":18.00,
+          "disconut":7.2
+        },
+        {
+          "goodsId":"102",
+          "goodsName": "洋葱肥牛饭",
+          "goodsPicture":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=4204230424,251096793&fm=26&gp=0.jpg",
+          "monthSaleNums":66,
+          "praiseNums":1,
+          "nomalPrice":28.90,
+          "discountPrice":21.00,
+          "disconut":7.27
+        },
+        {
+          "goodsId":"103",
+          "goodsName": "白米饭",
+          "goodsPicture":"https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2806718455,2329655186&fm=26&gp=0.jpg",
+          "monthSaleNums":159,
+          "praiseNums":2,
+          "nomalPrice":5.00,
+          "discountPrice":3.00,
+          "disconut":6.0
+        }
+      ]
+    },
+    {
+      "typeId": "2",
+      "typeName": "天天特价",
+      "typeGoodsList": [
+        {
+          "goodsId":"201",
+          "goodsName": "白粥+安心油条+玉米蒸饺+榨菜",
+          "goodsPicture":"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3481607347,2310911687&fm=26&gp=0.jpg",
+          "monthSaleNums":2,
+          "praiseNums":0,
+          "nomalPrice":26.00,
+          "discountPrice":26.00,
+          "disconut":0
+        },
+        {
+          "goodsId":"202",
+          "goodsName": "莲子黑米粥+牛肉馅饼",
+          "goodsPicture":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=368775349,3038972318&fm=26&gp=0.jpg",
+          "monthSaleNums":13,
+          "praiseNums":1,
+          "nomalPrice":21.00,
+          "discountPrice":21.00,
+          "disconut":0
+        }
+      ]
+    },
+    {
+      "typeId": "3",
+      "typeName": "豆制品",
+      "typeGoodsList": [
+        {
+          "goodsId":"301",
+          "goodsName": "安心油条（2根）",
+          "goodsPicture":"https://f12.baidu.com/it/u=4036428579,377793569&fm=72",
+          "monthSaleNums":57,
+          "praiseNums":0,
+          "nomalPrice":9.00,
+          "discountPrice":9.00,
+          "disconut":0
+        },
+        {
+          "goodsId":"302",
+          "goodsName": "鲜豆浆",
+          "goodsPicture":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=311638622,1617109639&fm=26&gp=0.jpg",
+          "monthSaleNums":30,
+          "praiseNums":1,
+          "nomalPrice":11.00,
+          "discountPrice":11.00,
+          "disconut":0
+        }
+      ]
+    },
+    {
+      "typeId": "4",
+      "typeName": "超值套餐",
+      "typeGoodsList": [
+        {
+          "goodsId":"401",
+          "goodsName": "酱烧冬瓜套餐饭",
+          "goodsPicture":"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=365690737,3980126849&fm=26&gp=0.jpg",
+          "monthSaleNums":29,
+          "praiseNums":1,
+          "nomalPrice":24.00,
+          "discountPrice":24.00,
+          "disconut":0
+        },
+        {
+          "goodsId":"402",
+          "goodsName": "冬菇鸡拼排骨套餐饭",
+          "goodsPicture":"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3731710236,3156183474&fm=26&gp=0.jpg",
+          "monthSaleNums":77,
+          "praiseNums":7,
+          "nomalPrice":27.9,
+          "discountPrice":27.9,
+          "disconut":0
+        }
+      ]
+    },
+    {
+      "typeId": "5",
+      "typeName": "原蛊蒸汤",
+      "typeGoodsList": [
+        {
+          "goodsId":"501",
+          "goodsName": "红萝卜玉米原蛊蒸汤",
+          "goodsPicture":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3331797181,653625698&fm=15&gp=0.jpg",
+          "monthSaleNums":63,
+          "praiseNums":12,
+          "nomalPrice":15.00,
+          "discountPrice":15.00,
+          "disconut":0
+        },
+        {
+          "goodsId":"502",
+          "goodsName": "元气乌鸡原蛊蒸汤",
+          "goodsPicture":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=317769935,3377628512&fm=26&gp=0.jpg",
+          "monthSaleNums":82,
+          "praiseNums":1,
+          "nomalPrice":17.00,
+          "discountPrice":17.00,
+          "disconut":0
+        }
+      ]
+    }
+  ]
+}
