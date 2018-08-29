@@ -3,6 +3,7 @@ package com.example.administrator.takeout.ui.adapter;
 import android.graphics.Color;
 import android.support.annotation.Nullable;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
@@ -35,5 +36,6 @@ public class GoodsTypeAdapter extends BaseQuickAdapter<GoodsInfoBean.GoodsInfoLi
             tv_type_name.setTextColor(Color.parseColor("#1f1f1f"));
             tv_type_name.setBackgroundResource(R.color.bggray);
         }
+        helper.addOnClickListener(R.id.tv_type_name);
     }
 }
